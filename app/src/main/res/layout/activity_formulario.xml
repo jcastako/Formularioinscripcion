@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jcastako.formularioinscripcion.FormularioActivity">
+
+    <RelativeLayout
+        android:layout_width="371dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ScrollView
+            android:layout_width="355dp"
+            android:layout_height="369dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="50dp">
+
+                <EditText
+                    android:id="@+id/usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrese un nombre de Usuario"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/contrasena1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrese una contraseña"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/contrasena2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrese nuevamente  su nombre"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrese su nombre"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrese su apellido"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrse su edad"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrese su E-mail"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/email2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ingrese nuevamente su E-mail"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/objetivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Que objetivos quiere lograr:"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/botonGuardar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Guardar Formulario"
+                    tools:layout_editor_absoluteX="103dp"
+                    tools:layout_editor_absoluteY="447dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:background="@color/titulo"
+            android:text="FORMULARIO DE INSCRIPCIÓN"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <include layout="@layout/content_formulario"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</android.support.design.widget.CoordinatorLayout>

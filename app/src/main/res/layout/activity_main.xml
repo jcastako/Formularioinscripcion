@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jcastako.formularioinscripcion.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="507dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/botonIng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INGRESAR"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="231dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/botonIng"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="92dp"
+            android:background="@android:color/holo_green_light"
+            android:text="CENTER GYM"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/botonIng"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="FORMULARIO DE INGRESO"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
